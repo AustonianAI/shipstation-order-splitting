@@ -1,9 +1,7 @@
 exports.newOrder = (req, res, next) => {
-  console.log("webhook received");
-  console.log(req);
-
   res.status(200).json({
     message: "Got the post",
+    body: req.body,
   });
 };
 
