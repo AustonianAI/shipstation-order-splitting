@@ -1,12 +1,12 @@
-const path = require("path");
-
 const express = require("express");
 
 const errorController = require("./controllers/error");
 
 const shipStationRoutes = require("./routes/shipstation");
+const compression = require("compression");
 
 const app = express();
+app.use(compression());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
