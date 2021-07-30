@@ -2,10 +2,12 @@ const path = require("path");
 
 const express = require("express");
 
-const shipStationController = require("../controllers/shipstation");
+const shipstationController = require("../controllers/shipstation");
 
 const router = express.Router();
 
-router.get("/test", shipStationController.test);
+router.get("/test", shipstationController.test);
+
+router.post("/new-order-webhook", shipstationController.newOrder);
 
 module.exports = router;
