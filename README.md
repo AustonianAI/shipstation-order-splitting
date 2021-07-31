@@ -5,7 +5,7 @@ This project uses the following environment variables:
 
 | Name                          | Description                         | Default Value                                  |
 | ----------------------------- | ------------------------------------| -----------------------------------------------|
-|SHIPSTATION_API_KEY           | Your base64 encodes ShipStation Username:Password          | N/A      |
+|SHIPSTATION_API_KEY           | Your base64 encoded ShipStation Username:Password          | N/A      |
 
 
 # Pre-requisites
