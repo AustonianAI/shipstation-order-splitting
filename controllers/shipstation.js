@@ -41,7 +41,7 @@ const analyzeOrders = async (newOrders) => {
       const warehouses = [
         ...new Set(
           order.items.map((item) => {
-            if (item.warehouseLocation) {
+            if (typeof item.warehouseLocation !== "undefined") {
               return item.warehouseLocation;
             }
           })
