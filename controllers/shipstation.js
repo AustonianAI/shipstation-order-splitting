@@ -29,7 +29,9 @@ const analyzeOrders = async (newOrders) => {
       const warehouses = [
         ...new Set(
           order.items.map((item) => {
-            return item.warehouseLocation;
+            if (item.warehouseLocation) {
+              return item.warehouseLocation;
+            }
           })
         ),
       ];
