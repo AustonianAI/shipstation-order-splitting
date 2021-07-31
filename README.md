@@ -1,11 +1,11 @@
-# shipstation-order-splitting
+# ShipStation Order Splitting
 
 # Environment vars
 This project uses the following environment variables:
 
 | Name                          | Description                         | Default Value                                  |
 | ----------------------------- | ------------------------------------| -----------------------------------------------|
-|CORS           | Cors accepted values            | "*"      |
+|SHIPSTATION_API_KEY           | Your base64 encodes ShipStation Username:Password          | "*"      |
 
 
 # Pre-requisites
