@@ -19,6 +19,7 @@ git clone https://github.com/AgenticAI/shipstation-order-splitting.git
 ```
 - Install dependencies
 ```
+cd shipstation-order-splitting/
 npm install
 ```
 - Build and run the project
