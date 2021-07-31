@@ -87,7 +87,7 @@ const splitShipstationOrder = (order, warehouses) => {
       // Filter for the order items for this specific warehouse.
       tempOrder.items = tempOrder.items.filter((item) => {
         // If the item's warehouseLocation is null, assign it to the first warehouse present.
-        if (!item.warehouseLocation && x === 0) {
+        if (item.warehouseLocation == null && x === 0) {
           item.warehouseLocation = warehouses[x];
         }
         return item.warehouseLocation === warehouses[x];
