@@ -99,7 +99,7 @@ const splitShipstationOrder = (order, warehouses) => {
         delete tempOrder.orderId;
         tempOrder.amountPaid = 0;
         tempOrder.taxAmount = 0;
-        tempOrder.shippingAmopunt = 0;
+        tempOrder.shippingAmount = 0;
       }
       orderUpdateArray.push(tempOrder);
     } catch (err) {
